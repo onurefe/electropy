@@ -22,7 +22,7 @@ def getLCFrequency(capacity, inductance):
 	return (1.0 / (2.0 * math.pi * math.sqrt(capacity * inductance)))
 
 def getRCTime(resistance, capacitance):
-	return (1.0 / (resistance * capacitance))
+	return (resistance * capacitance)
 
 def getRCFrequency(resistance, capacitance):
 	return (1.0 / (2.0 * math.pi * resistance * capacitance))
