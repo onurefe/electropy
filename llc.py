@@ -83,7 +83,7 @@ r_load = 10000000.0, rectifier_cutoff = 40000.0, resolution = 1000, num_of_harmo
 		w = 2.0 * math.pi * f  
 		coeff = 4.0 / ((2.0*i + 1) * math.pi)
 		f_resp = freqResponse(w, l_tank, c_tank, l_mutual, r_series, turn_ratio, r_load)
-		sum_y += coeff * f_resp * math.e**(1j * w * t))
+		sum_y += coeff * f_resp * math.e**(1j * w * t)
 	
 	for y in sum_y:
 		if (abs(y) > max_y):
